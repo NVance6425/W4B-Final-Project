@@ -1,0 +1,86 @@
+body { 
+    min-height:100%; 
+    padding:0; 
+    margin:0; 
+    position:relative;
+}
+
+.bgimage {
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/leatherbackground.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
+
+.pagecontainer {
+    position: relative;
+    min-height: 100vh;
+}
+
+.contentwrap {
+    padding-bottom: 56px;
+}
+
+nav {
+    height: 60px;
+    background-color: #000;
+}
+
+.logo {
+    float:left;
+    height: 60px;
+    width: 80px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    float:right;
+}
+
+nav li a {
+    display: block;
+    height: 20px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+nav li a:hover {
+    background-color: #000;
+    background-image: url(/img/heart.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    transition: .4s;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom:0;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    padding-top: 16px;
+}
+
+.smlogo {
+    height: 20px;
+    width: 20px;
+    margin: 0px 10px;
+    float: inline-start;
+}
+
+footer div {
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
