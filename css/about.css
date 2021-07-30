@@ -2,39 +2,47 @@ body {
     min-height:100%; 
     padding:0; 
     margin:0; 
-    position:relative;
 }
 
 .bgimage {
     height: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/leatherbackground.jpg);
-    /* background-repeat: no-repeat; */
     background-position: center;
     background-size: cover;
-    position: relative; 
+}
+
+/* NavBar CSS */
+
+.pagecontainer {
+    position: relative;
+    min-height: 100vh;
+}
+
+.contentwrap {
+    padding-bottom: 56px;
 }
 
 nav {
-    /* position: sticky; */
     height: 60px;
     background-color: #000;
+    background-image: url(/img/rolls.jpg);
 }
 
 .logo {
     float:left;
     height: 60px;
-    width: 80px;
+    width: 60px;
 }
 
-ul {
+nav ul {
     list-style-type: none;
 }
 
-li {
+nav li {
     float:right;
 }
 
-li a {
+nav li a {
     display: block;
     height: 20px;
     padding: 20px;
@@ -44,9 +52,8 @@ li a {
     font-weight: 500;
 }
 
-li a:hover {
-    background-color: #000;
-    background-image: url(/img/heart.png);
+nav li a:hover {
+    background-image: url(/img/leatherlogo2.png);
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -54,10 +61,6 @@ li a:hover {
     transition: .4s;
 }
 
-.menuhighlight {
-    background-color: #DC143C;
-    color: #fff;
-}
 
 footer {
     width: 100%;

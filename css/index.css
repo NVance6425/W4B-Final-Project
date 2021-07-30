@@ -83,9 +83,11 @@ nav li a:hover {
 /* Caption text */
 .text {
     box-sizing: border-box;
-    color: #f2f2f2;
-    font-size: 84px;
-    padding-top: 100px;
+    color: #bebebe;
+    text-shadow: #000 5px 5px 3px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 96px;
+    padding-top: 70px;
     position: absolute;
     bottom: 0;
     width: 600px;
