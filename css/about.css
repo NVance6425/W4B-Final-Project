@@ -45,13 +45,15 @@ nav {
 
 nav ul {
     list-style-type: none;
+    position: relative;
+    padding-inline-start: 0;
 }
 
 nav li {
     float:right;
 }
 
-nav li a {
+.navlink {
     display: block;
     height: 20px;
     padding: 20px;
@@ -61,7 +63,7 @@ nav li a {
     font-weight: 500;
 }
 
-nav li a:hover {
+.navlink:hover {
     background-image: url(../img/leatherlogo2.png);
     background-size:contain;
     background-repeat: no-repeat;
@@ -69,6 +71,48 @@ nav li a:hover {
     color: #fff;
     transition: .4s;
 }
+
+/* Dropdown */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    
+    display: none;
+    position: absolute;
+    margin-left: -30px;
+    background-image: url(../img/leatherlogo2.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 140px;
+    height: 140px;
+} 
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdownlist {
+    list-style-type: circle;
+}
+
+.vert {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding-top: 10px;
+    font-size: 14pt;
+    text-align: center;
+}
+.vert:hover {
+    color: #999;
+}
+
+/* Content Styling */
 
 .columnl {
     float: left;
@@ -90,6 +134,10 @@ section {
     height: 100vh;
 }
 
+section a {
+    color: #888;
+}
+
 h2 {
     margin: 0;
     padding-top: 35vh;
@@ -98,11 +146,11 @@ h2 {
 p {
     margin: 0;
     padding-top: 30px;
+    padding-bottom: 10px;
     font-size: 14pt;
     text-shadow: 1px 1px #000;
 }
 
-/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
@@ -128,6 +176,8 @@ p {
     border: 1px solid #fff;
 }
 
+/* Footer CSS */
+
 footer {
     width: 100%;
     text-align: center;
@@ -149,13 +199,4 @@ footer {
 footer div {
     margin-top: -10px;
     margin-bottom: 5px;
-}
-
-.pagecontainer {
-    position: relative;
-    min-height: 100vh;
-}
-
-.contentwrap {
-    padding-bottom: 56px;
 }
