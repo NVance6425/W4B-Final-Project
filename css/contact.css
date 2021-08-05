@@ -210,6 +210,16 @@ input[type=submit]:hover {
     margin-top: 40px;
 }
 
+.label {
+    color: #fff;
+    font-size: 16pt;
+}
+
+.contact {
+    margin-left: 175px;
+    margin-top: 10vh;
+}
+
 /* Footer CSS */
 
 footer {
@@ -221,7 +231,6 @@ footer {
     background-color: #000;
     color: #fff;
     padding-top: 16px;
-    /* background-image: url(../img/rolls.jpg); */
 }
 
 .smlogo {
@@ -234,13 +243,4 @@ footer {
 footer div {
     margin-top: -10px;
     margin-bottom: 5px;
-}
-
-.pagecontainer {
-    position: relative;
-    min-height: 100vh;
-}
-
-.contentwrap {
-    padding-bottom: 56px;
 }
