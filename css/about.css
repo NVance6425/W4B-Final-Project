@@ -70,6 +70,30 @@ nav li a:hover {
     transition: .4s;
 }
 
+.columnl {
+    float: left;
+    width: 500px;
+    margin: 0 35px 0 400px;
+    padding: 10px;
+    height: 1000px; /* Should be removed. Only for demonstration */
+}
+
+.columnr {
+    float: left;
+    width: 500px;
+    margin: 0 35px 0 35px;
+    padding: 10px;
+    height: 1000px; /* Should be removed. Only for demonstration */
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .aboutvid {
     clear: both;
 }
